@@ -13,6 +13,8 @@ function calculate() {
   } else if (isNaN(ldlc)) {
       document.getElementById("ldlc").value = (tc - hdlc - tg / 5).toFixed(2);
   }
+
+  document.getElementById("non-hdl").value = (tc - hdlc).toFixed(2);
 }
 
 function clearInputs() {
